@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tvInfoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:id="@+id/llInfoDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvInfoTitle"
+            android:layout_alignLeft="@id/tvInfoTitle"
+            android:layout_alignStart="@id/tvInfoTitle"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvInfoReleaseYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/tvInfoDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvInfoImages"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scrollbars="horizontal"
+            android:layout_below="@id/llInfoDetail"
+            android:layout_alignLeft="@id/tvInfoTitle"
+            android:layout_alignStart="@id/tvInfoTitle" />
+
+        <TextView
+            android:id="@+id/tvInfoOverview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:layout_below="@id/rvInfoImages"
+            android:layout_alignLeft="@id/tvInfoTitle"
+            android:layout_alignStart="@id/tvInfoTitle"/>
+
+    </RelativeLayout>
+</ScrollView>

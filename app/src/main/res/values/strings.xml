@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lista Filmes</string>
+    <string name="subtitle">Uma seleção de filmes imperdíveis</string>
+    <string name="movie_content_descriptor">Capa do filme</string>
+</resources>
